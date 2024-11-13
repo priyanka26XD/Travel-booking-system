@@ -1,0 +1,15 @@
+travel-booking-system/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── config/
+│   │   │   ├── dao/
+│   │   │   ├── model/
+│   │   │   └── service/
+│   │   └── resources/
+│   └── test/
+├── database/
+│   └── schema.sql
+├── config/
+│   └── application.properties
+└── pom.xml
