@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking System</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Travel Booking</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#book">Book a Trip</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1>Welcome to the Travel Booking System</h1>
+        <p>Find your dream destination and book your trip today!</p>
+        <a href="#book" class="btn btn-light btn-lg">Start Booking</a>
+    </div>
+</section>
+
+<!-- Booking Form -->
+<section id="book" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Book Your Trip</h2>
+        <form id="booking-form" action="#" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                    <small class="form-text text-danger" id="name-error"></small>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <small class="form-text text-danger" id="email-error"></small>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="start-date">Start Date</label>
+                    <input type="date" class="form-control" id="start-date" name="start-date" required>
+                    <small class="form-text text-danger" id="start-date-error"></small>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="end-date">End Date</label>
+                    <input type="date" class="form-control" id="end-date" name="end-date" required>
+                    <small class="form-text text-danger" id="end-date-error"></small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Select Destination</label>
+                <select class="form-control" id="destination" name="destination" required>
+                    <option value="">Choose a destination</option>
+                    <option value="paris">Paris</option>
+                    <option value="new-york">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="sydney">Sydney</option>
+                </select>
+                <small class="form-text text-danger" id="destination-error"></small>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block">Book Now</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Priyanka Patel. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
