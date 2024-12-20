@@ -1,0 +1,9 @@
+/user-management
+│
+├── index.html            # Login page
+├── register.html         # Registration page
+├── profile.html          # User profile page
+├── styles.css            # Custom CSS
+├── scripts.js            # JavaScript for form validation and interactivity
+├── assets/               # Folder for images, icons, or other assets
+└── README.md             # Project description and setup
