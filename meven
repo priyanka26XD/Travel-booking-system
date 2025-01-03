@@ -1,0 +1,17 @@
+online-booking-system/
+├── pom.xml
+├── src/
+    ├── main/
+        ├── java/
+            └── com/
+                └── example/
+                    └── booking/
+                        └── BookingController.java
+                        └── BookingService.java
+                        └── Booking.java
+        ├── resources/
+            └── application.properties
+        ├── webapp/
+            ├── WEB-INF/
+            │   └── web.xml
+            ├── index.jsp
